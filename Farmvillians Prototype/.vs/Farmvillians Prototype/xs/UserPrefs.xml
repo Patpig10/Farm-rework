@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{9B2075B3-73D4-4EC2-1576-9DE4363EB57E}|">
+  <MonoDevelop.Ide.ItemProperties.Unity.ProBuilder.Examples PreferredExecutionTarget="58a49e4b-6f07-406f-bff7-abc21b2a00b0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Gold.cs">
+    <Files>
+      <File FileName="Assets/FarmingControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/FarmPlot.cs" />
+      <File FileName="Assets/ShopManagerScript.cs" Line="71" Column="9" />
+      <File FileName="Assets/ButtonInfo.cs" />
+      <File FileName="Assets/Gold.cs" Line="17" Column="83" />
+      <File FileName="Assets/HungerScript.cs" />
+      <File FileName="Assets/PauseMenu.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Farmvillians Prototype" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Gold.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="36b9165a-0402-41cd-9191-315124871b9c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
