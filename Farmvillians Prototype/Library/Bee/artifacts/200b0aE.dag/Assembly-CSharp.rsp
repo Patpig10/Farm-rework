@@ -325,9 +325,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
--r:"C:/Users/david/Downloads/School/coding/Exam/Farm/Farmvillians Prototype/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/david/Downloads/School/coding/Exam/Farm/Farmvillians Prototype/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/david/Downloads/School/coding/Exam/Farm/Farmvillians Prototype/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/david/Downloads/Farm-rework/Farmvillians Prototype/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/david/Downloads/Farm-rework/Farmvillians Prototype/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/david/Downloads/Farm-rework/Farmvillians Prototype/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -375,7 +375,10 @@
 "Assets/Scripts/NPC Manager/ButtonInfo.cs"
 "Assets/Scripts/NPC Manager/HungerScript.cs"
 "Assets/Scripts/UI/Days.cs"
+"Assets/Scripts/UI/LevelManager.cs"
+"Assets/Scripts/UI/LevelManagerScript.cs"
 "Assets/Scripts/UI/PauseMenu.cs"
+"Assets/Scripts/UI/Retry.cs"
 -langversion:9.0
 
 /deterministic
