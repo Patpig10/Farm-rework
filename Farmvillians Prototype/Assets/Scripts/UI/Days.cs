@@ -29,7 +29,7 @@ public class Days : MonoBehaviour
 
         }
         Day.text = "Days: " + days;
-        if( days == 15)
+        if( days == 30)
         {
             SceneManager.LoadScene("GameWin");
 

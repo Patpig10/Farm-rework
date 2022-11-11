@@ -21,6 +21,6 @@ public class Retry : MonoBehaviour
     public void RetryGame()
     {
         SceneManager.LoadScene("Farm");
-
+        Days.days = 1;
     }
 }

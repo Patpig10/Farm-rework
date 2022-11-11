@@ -296,6 +296,8 @@ struct List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A;
 struct List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A;
 // System.Collections.Generic.List`1<UnityEngine.Events.UnityEvent>
 struct List_1_t1F66D85D40A4A6882E6F434BFB9DAC00C51F0EAA;
+// System.Collections.Generic.List`1<UnityEngine.Vector2>
+struct List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B;
 // System.Collections.Generic.List`1<UnityEngine.Vector3>
 struct List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B;
 // System.Collections.Generic.List`1<UnityEngine.Vector4>
@@ -2673,36 +2675,36 @@ struct U3CU3Ec_tB74E998116FFDE2919C1EF6E8B35AB3798461A28_StaticFields
 	Comparison_1_t72A7B2EACD3F8F0C3D6A14C88E2B3C719E89C50E* ___U3CU3E9__2_0_1;
 };
 
-// FarmingControl/<HarvestState>d__23
-struct U3CHarvestStateU3Ed__23_tA6C14A41BE64095A7408093E311B0A7EED31E1BD  : public RuntimeObject
+// FarmingControl/<HarvestState>d__25
+struct U3CHarvestStateU3Ed__25_t73FA2E5FC8B47DC153D78307EB0EACD91267AF42  : public RuntimeObject
 {
-	// System.Int32 FarmingControl/<HarvestState>d__23::<>1__state
+	// System.Int32 FarmingControl/<HarvestState>d__25::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FarmingControl/<HarvestState>d__23::<>2__current
+	// System.Object FarmingControl/<HarvestState>d__25::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// FarmingControl FarmingControl/<HarvestState>d__23::<>4__this
+	// FarmingControl FarmingControl/<HarvestState>d__25::<>4__this
 	FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C* ___U3CU3E4__this_2;
 };
 
-// FarmingControl/<HoeState>d__21
-struct U3CHoeStateU3Ed__21_t21848C1853E5347C1431FFCD3F7868E723DDEB4B  : public RuntimeObject
+// FarmingControl/<HoeState>d__23
+struct U3CHoeStateU3Ed__23_t7F22A20DE18AF50DA2C1DB9C915C02A6A8024C59  : public RuntimeObject
 {
-	// System.Int32 FarmingControl/<HoeState>d__21::<>1__state
+	// System.Int32 FarmingControl/<HoeState>d__23::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FarmingControl/<HoeState>d__21::<>2__current
+	// System.Object FarmingControl/<HoeState>d__23::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// FarmingControl FarmingControl/<HoeState>d__21::<>4__this
+	// FarmingControl FarmingControl/<HoeState>d__23::<>4__this
 	FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C* ___U3CU3E4__this_2;
 };
 
-// FarmingControl/<SeedState>d__22
-struct U3CSeedStateU3Ed__22_tA75ED950BDBA0CF37003B102F50F76D124DE8A94  : public RuntimeObject
+// FarmingControl/<SeedState>d__24
+struct U3CSeedStateU3Ed__24_t5AAC02B16AFCF2EADE92F2D08E524695F32BAEE8  : public RuntimeObject
 {
-	// System.Int32 FarmingControl/<SeedState>d__22::<>1__state
+	// System.Int32 FarmingControl/<SeedState>d__24::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object FarmingControl/<SeedState>d__22::<>2__current
+	// System.Object FarmingControl/<SeedState>d__24::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// FarmingControl FarmingControl/<SeedState>d__22::<>4__this
+	// FarmingControl FarmingControl/<SeedState>d__24::<>4__this
 	FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C* ___U3CU3E4__this_2;
 };
 
@@ -10050,6 +10052,10 @@ struct FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C  : public MonoBe
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___seedCount_22;
 	// UnityEngine.RaycastHit FarmingControl::rayHit
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___rayHit_23;
+	// System.Collections.Generic.List`1<UnityEngine.Vector2> FarmingControl::points
+	List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* ___points_24;
+	// UnityEngine.Vector2 FarmingControl::closestPoint
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___closestPoint_25;
 };
 
 // Gold
@@ -10120,8 +10126,10 @@ struct HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45  : public MonoBeha
 	int32_t ___maxHunger_5;
 	// System.Int32 HungerScript::hungerUsage
 	int32_t ___hungerUsage_6;
+	// ShopManagerScript HungerScript::shopManager
+	ShopManagerScript_t1C70AECE015C2413223938D7AFEF9E6B461FD992* ___shopManager_7;
 	// UnityEngine.UI.Button HungerScript::myButton
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___myButton_7;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___myButton_8;
 };
 
 // LevelManager
@@ -12951,16 +12959,16 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3876[4] =
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3877[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CHoeStateU3Ed__21_t21848C1853E5347C1431FFCD3F7868E723DDEB4B, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CHoeStateU3Ed__21_t21848C1853E5347C1431FFCD3F7868E723DDEB4B, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CHoeStateU3Ed__21_t21848C1853E5347C1431FFCD3F7868E723DDEB4B, ___U3CU3E4__this_2)),};
+	static_cast<int32_t>(offsetof(U3CHoeStateU3Ed__23_t7F22A20DE18AF50DA2C1DB9C915C02A6A8024C59, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CHoeStateU3Ed__23_t7F22A20DE18AF50DA2C1DB9C915C02A6A8024C59, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CHoeStateU3Ed__23_t7F22A20DE18AF50DA2C1DB9C915C02A6A8024C59, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3878[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CSeedStateU3Ed__22_tA75ED950BDBA0CF37003B102F50F76D124DE8A94, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CSeedStateU3Ed__22_tA75ED950BDBA0CF37003B102F50F76D124DE8A94, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CSeedStateU3Ed__22_tA75ED950BDBA0CF37003B102F50F76D124DE8A94, ___U3CU3E4__this_2)),};
+	static_cast<int32_t>(offsetof(U3CSeedStateU3Ed__24_t5AAC02B16AFCF2EADE92F2D08E524695F32BAEE8, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CSeedStateU3Ed__24_t5AAC02B16AFCF2EADE92F2D08E524695F32BAEE8, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CSeedStateU3Ed__24_t5AAC02B16AFCF2EADE92F2D08E524695F32BAEE8, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3879[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CHarvestStateU3Ed__23_tA6C14A41BE64095A7408093E311B0A7EED31E1BD, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CHarvestStateU3Ed__23_tA6C14A41BE64095A7408093E311B0A7EED31E1BD, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CHarvestStateU3Ed__23_tA6C14A41BE64095A7408093E311B0A7EED31E1BD, ___U3CU3E4__this_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3880[20] = 
+	static_cast<int32_t>(offsetof(U3CHarvestStateU3Ed__25_t73FA2E5FC8B47DC153D78307EB0EACD91267AF42, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CHarvestStateU3Ed__25_t73FA2E5FC8B47DC153D78307EB0EACD91267AF42, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CHarvestStateU3Ed__25_t73FA2E5FC8B47DC153D78307EB0EACD91267AF42, ___U3CU3E4__this_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3880[22] = 
 {
-	static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___farmPlotPrefab_4)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___farmPlots_5)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___mainCamera_6)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___market_7)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___changeThis_8)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___state_9)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___excessCrops_10)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___toMarket_11)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___daysPassed_12)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___goldPerDay_13)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___currentGold_14)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedCost_15)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedPurchaseAmount_16)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___maxBlightChance_17)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___blightChance_18)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___hoeUI_19)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___harvestUI_20)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedUI_21)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedCount_22)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___rayHit_23)),};
+	static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___farmPlotPrefab_4)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___farmPlots_5)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___mainCamera_6)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___market_7)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___changeThis_8)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___state_9)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___excessCrops_10)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___toMarket_11)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___daysPassed_12)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___goldPerDay_13)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___currentGold_14)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedCost_15)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedPurchaseAmount_16)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___maxBlightChance_17)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___blightChance_18)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___hoeUI_19)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___harvestUI_20)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedUI_21)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___seedCount_22)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___rayHit_23)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___points_24)),static_cast<int32_t>(offsetof(FarmingControl_t5F37A5FA4AD97C5CD10875F67622B6C24BB6963C, ___closestPoint_25)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3881[3] = 
 {
 	static_cast<int32_t>(offsetof(FarmPlot_tA2B82A2E098D34ADD74A786684D0192D1F5FC2EF, ___seeded_4)),static_cast<int32_t>(offsetof(FarmPlot_tA2B82A2E098D34ADD74A786684D0192D1F5FC2EF, ___grown_5)),static_cast<int32_t>(offsetof(FarmPlot_tA2B82A2E098D34ADD74A786684D0192D1F5FC2EF, ___blighted_6)),};
@@ -12973,9 +12981,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3883[8] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3884[4] = 
 {
 	static_cast<int32_t>(offsetof(ButtonInfo_t0720A00DFC922287B215BA637B5EC83F844DFB93, ___PersonID_4)),static_cast<int32_t>(offsetof(ButtonInfo_t0720A00DFC922287B215BA637B5EC83F844DFB93, ___DemandTxt_5)),static_cast<int32_t>(offsetof(ButtonInfo_t0720A00DFC922287B215BA637B5EC83F844DFB93, ___PaymentTxt_6)),static_cast<int32_t>(offsetof(ButtonInfo_t0720A00DFC922287B215BA637B5EC83F844DFB93, ___ShopManager_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3885[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3885[5] = 
 {
-	static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___hungerBar_4)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___maxHunger_5)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___hungerUsage_6)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___myButton_7)),};
+	static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___hungerBar_4)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___maxHunger_5)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___hungerUsage_6)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___shopManager_7)),static_cast<int32_t>(offsetof(HungerScript_t20CF51B676C09F63A92D92DEE25FF06AFEFC1F45, ___myButton_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3886[3] = 
 {
 	static_cast<int32_t>(offsetof(Days_t64A93386B52A6D12C7B3E959742A1DFC57A52496, ___Day_4)),static_cast<int32_t>(offsetof(Days_t64A93386B52A6D12C7B3E959742A1DFC57A52496_StaticFields, ___days_5)),static_cast<int32_t>(offsetof(Days_t64A93386B52A6D12C7B3E959742A1DFC57A52496_StaticFields, ___debt_6)),};
