@@ -66,9 +66,9 @@ public class ShopManagerScript : MonoBehaviour
     {
         if (goldObtained! >= goldLimit)
         {
-            goldObtained -= 3;
+            goldObtained -= 2;
       
-            seed += 5;
+            seed += 1;
         }
 
     }

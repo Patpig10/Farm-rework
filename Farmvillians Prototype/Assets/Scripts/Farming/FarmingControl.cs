@@ -166,7 +166,7 @@ public class FarmingControl : MonoBehaviour
                 if (rayHit.transform.parent.gameObject.GetComponent<FarmPlot>().grown.activeInHierarchy)
                 {
                     rayHit.transform.parent.gameObject.GetComponent<FarmPlot>().grown.SetActive(false);
-                    ShopManagerScript.crops += Random.Range(2, 5);
+                    ShopManagerScript.crops += Random.Range(1, 4);
                     
                 }
                 break;
@@ -272,6 +272,11 @@ public class FarmingControl : MonoBehaviour
 
         market.SetActive(true);
         toMarket = true;
+    }
+    public void ReturnFromMarket()
+    {
+        market.SetActive(false);
+        toMarket = false;
     }
 
     public Vector2 NearestPoint(Vector3 point)

@@ -327,6 +327,7 @@
 -r:"/Users/annettelohan/Documents/Unity Dipositories/Farm-rework/Farmvillians Prototype/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Autodesk.Fbx.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Formats.Fbx.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Formats.Fbx.Runtime.ref.dll"
@@ -372,7 +373,10 @@
 "Assets/Scripts/NPC Manager/ButtonInfo.cs"
 "Assets/Scripts/NPC Manager/HungerScript.cs"
 "Assets/Scripts/UI/Days.cs"
+"Assets/Scripts/UI/LevelManager.cs"
+"Assets/Scripts/UI/LevelManagerScript.cs"
 "Assets/Scripts/UI/PauseMenu.cs"
+"Assets/Scripts/UI/Retry.cs"
 -langversion:9.0
 
 /deterministic

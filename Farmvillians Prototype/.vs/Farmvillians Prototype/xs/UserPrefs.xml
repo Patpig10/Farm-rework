@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{9B2075B3-73D4-4EC2-1576-9DE4363EB57E}|">
   <MonoDevelop.Ide.ItemProperties.Unity.ProBuilder.Examples PreferredExecutionTarget="58a49e4b-6f07-406f-bff7-abc21b2a00b0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Farming/FarmingControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NPC Manager/ButtonInfo.cs">
     <Files>
-      <File FileName="Assets/Scripts/Farming/FarmingControl.cs" Line="260" Column="1" />
+      <File FileName="Assets/Scripts/Farming/FarmingControl.cs" Line="279" Column="26" />
+      <File FileName="Assets/Scripts/Market/Gold.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Market/ShopManagerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/NPC Manager/ButtonInfo.cs" Line="16" Column="86" />
+      <File FileName="Assets/Scripts/NPC Manager/HungerScript.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,8 +14,10 @@
           <Node name="Farmvillians Prototype" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Farming" expanded="True">
-                  <Node name="FarmingControl.cs" selected="True" />
+                <Node name="Farming" expanded="True" />
+                <Node name="Market" expanded="True" />
+                <Node name="NPC Manager" expanded="True">
+                  <Node name="ButtonInfo.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -22,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4153d11e-ccb3-46e5-b87d-42949870e1dd" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0b1337f9-94ce-49a2-b354-ea5f84934f6a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
