@@ -56,13 +56,14 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/FarmingControl.cs" />
-    <Compile Include="Assets/FarmPlot.cs" />
-    <Compile Include="Assets/Gold.cs" />
-    <Compile Include="Assets/ButtonInfo.cs" />
-    <Compile Include="Assets/HungerScript.cs" />
-    <Compile Include="Assets/ShopManagerScript.cs" />
-    <Compile Include="Assets/PauseMenu.cs" />
+    <Compile Include="Assets/Scripts/Farming/FarmingControl.cs" />
+    <Compile Include="Assets/Scripts/Farming/FarmPlot.cs" />
+    <Compile Include="Assets/Scripts/Market/Gold.cs" />
+    <Compile Include="Assets/Scripts/NPC Manager/ButtonInfo.cs" />
+    <Compile Include="Assets/Scripts/UI/Days.cs" />
+    <Compile Include="Assets/Scripts/NPC Manager/HungerScript.cs" />
+    <Compile Include="Assets/Scripts/Market/ShopManagerScript.cs" />
+    <Compile Include="Assets/Scripts/UI/PauseMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

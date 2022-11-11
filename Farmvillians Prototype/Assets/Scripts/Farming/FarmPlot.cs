@@ -7,4 +7,5 @@ public class FarmPlot : MonoBehaviour
     public GameObject seeded;
     public GameObject grown;
     public GameObject blighted;
+
 }

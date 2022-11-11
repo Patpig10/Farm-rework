@@ -48,6 +48,9 @@ public class FarmingControl : MonoBehaviour
     
     private RaycastHit rayHit;
 
+    private List<Vector2> points = new List<Vector2>();
+    private Vector2 closestPoint;
+    
     
 
     IEnumerator HoeState()
@@ -98,6 +101,15 @@ public class FarmingControl : MonoBehaviour
     void Start()
     {
         ShopManagerScript.goldObtained = 30;
+
+        for(int x = 0; x < 8; x++)
+            for(int z = 0; z < 8; z++)
+            { 
+                Vector2 newPoint = new Vector2(transform.position.x + 17.5f -(x * 5), transform.position.z - 12.8f +(z * 3.6f));
+
+                points.Add(newPoint);
+            }
+
         NextState();
     }
 
@@ -134,7 +146,8 @@ public class FarmingControl : MonoBehaviour
         switch (state)
         {
             case State.Hoe:
-                    GameObject newPlot = GameObject.Instantiate(farmPlotPrefab, rayHit.point, transform.rotation);
+                Vector2 thisPoint = NearestPoint(rayHit.point);
+                    GameObject newPlot = GameObject.Instantiate(farmPlotPrefab, new Vector3(thisPoint.x, 1, thisPoint.y), transform.rotation);
                     newPlot.name = "Tilled";
                     farmPlots.Add(newPlot.GetComponent<FarmPlot>());
                 break;
@@ -142,7 +155,7 @@ public class FarmingControl : MonoBehaviour
                 if (!rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.activeInHierarchy && ShopManagerScript.seed > 0)
                 {
 
-                    if (!rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.active)
+                    if (!rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.activeInHierarchy)
                     {
                         rayHit.transform.gameObject.GetComponent<FarmPlot>().seeded.SetActive(true);
                         ShopManagerScript.seed--;
@@ -244,6 +257,7 @@ public class FarmingControl : MonoBehaviour
             ShopManagerScript.seed++;
         }
     }
+
     public void TurnGoldToSeed()
     {
         if (ShopManagerScript.goldObtained > seedCost)
@@ -260,5 +274,27 @@ public class FarmingControl : MonoBehaviour
         toMarket = true;
     }
 
+    public Vector2 NearestPoint(Vector3 point)
+    {
 
+        Vector2 thisPoint = new Vector2(0,0);
+        point.y = 0;
+        foreach(Vector2 location in points)
+        {
+            if (thisPoint.x == 0 && thisPoint.y == 0)
+                thisPoint = location;
+            else if (DistanceBetween(point, location) < DistanceBetween(point, thisPoint))
+                thisPoint = location;
+        }
+        return thisPoint;
+    }
+
+    public float DistanceBetween(Vector3 firstPoint, Vector2 secondPoint)
+    {
+        float distance = 0;
+
+        distance = Vector3.Distance(firstPoint, new Vector3(secondPoint.x, 0,secondPoint.y));
+
+        return distance;
+    }
 }
