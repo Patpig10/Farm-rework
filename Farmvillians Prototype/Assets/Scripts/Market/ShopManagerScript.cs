@@ -16,11 +16,13 @@ public class ShopManagerScript : MonoBehaviour
     public static int goldObtained = 0; //can be put in player code but you must change some code in gold script
     public float cropsCost;
     public float goldLimit;
+    public static bool othersAlive;
 
 
 
     void Start()
     {
+        othersAlive = true;
         CropsTxt.text = "Crops:" + crops;
 
         //people
@@ -42,11 +44,8 @@ public class ShopManagerScript : MonoBehaviour
     private void Update()
     {
 
-        CropsTxt.text = "Crops: " + crops;
-        seedText.text = "Seeds: " + seed;
-
-        
-
+        CropsTxt.text = crops.ToString();
+        seedText.text = seed.ToString();
     }
 
     public void Sell()

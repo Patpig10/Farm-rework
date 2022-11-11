@@ -242,8 +242,8 @@ public class FarmingControl : MonoBehaviour
                 plot.grown.SetActive(false);
             }
         }
-
-        blightChance += 10;
+        if(daysPassed > 5)
+           blightChance += 10;
         if (blightChance > maxBlightChance)
             blightChance = maxBlightChance;
 

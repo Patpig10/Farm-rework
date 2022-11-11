@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes 1/Debt.unity
     guid: b128f5bbe8074604cae7ae03378cad8c
+  - enabled: 1
+    path: Assets/Scenes 1/Saved.unity
+    guid: e8c871700ad044ff886fdabb821d72b0
   m_configObjects: {}
