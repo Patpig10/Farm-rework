@@ -372,6 +372,7 @@
 "Assets/Scripts/Market/ShopManagerScript.cs"
 "Assets/Scripts/NPC Manager/ButtonInfo.cs"
 "Assets/Scripts/NPC Manager/HungerScript.cs"
+"Assets/Scripts/QuitGame.cs"
 "Assets/Scripts/UI/Days.cs"
 "Assets/Scripts/UI/LevelManager.cs"
 "Assets/Scripts/UI/LevelManagerScript.cs"

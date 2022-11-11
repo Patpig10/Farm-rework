@@ -15,13 +15,15 @@ public class HungerScript : MonoBehaviour
 
     private void Start()
     {
-        shopManager = GetComponent<ButtonInfo>().ShopManager;
+        shopManager = myButton.GetComponent<ButtonInfo>().ShopManager;
     }
 
     public void BoughtFood()
     {
         if(hungerBar < maxHunger)
             hungerBar += hungerUsage;
+        if (hungerBar > maxHunger)
+            hungerBar = maxHunger;
 
     }
 
@@ -35,6 +37,7 @@ public class HungerScript : MonoBehaviour
             myButton.image.color = Color.black;
             myButton.enabled = false;
             shopManager.peopleNames[3, 3] -= shopManager.peopleNames[3, GetComponent<ButtonInfo>().PersonID];
+            ShopManagerScript.othersAlive = false;
         }
 
     }

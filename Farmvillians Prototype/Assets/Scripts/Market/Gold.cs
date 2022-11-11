@@ -16,11 +16,13 @@ public class Gold : MonoBehaviour
 
     private void Update()
     {
-        textNoCollected.text = "Gold : " + ShopManagerScript.goldObtained;
+        textNoCollected.text = ShopManagerScript.goldObtained.ToString();
         if (goldObtained < -20)
         {
-            SceneManager.LoadScene("Debt");
-
+            if (!ShopManagerScript.othersAlive)
+                SceneManager.LoadScene("Debt");
+            else
+                SceneManager.LoadScene("Saved");
         }
     }
 

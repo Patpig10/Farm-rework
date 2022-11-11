@@ -13,7 +13,7 @@ public class ButtonInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DemandTxt.text = "Sell: " + ShopManager.peopleNames[2, PersonID].ToString();
-        PaymentTxt.text = "For: " + ShopManager.peopleNames[3, PersonID].ToString();
+        DemandTxt.text = ShopManager.peopleNames[2, PersonID].ToString();
+        PaymentTxt.text = ShopManager.peopleNames[3, PersonID].ToString();
     }
 }
